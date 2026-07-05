@@ -1,0 +1,24 @@
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
+
+local placeId = game.PlaceId
+
+if placeId == 95082159892680 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/2s2m7fmwhv-cyber/Unique-Scripts/refs/heads/main/%2B1%20speed%20keyboard%20escape_obfuscated.lua"))()
+    
+elseif placeId == 97598239454123 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/2s2m7fmwhv-cyber/Unique-Scripts/refs/heads/main/GAG%202_obfuscated.lua"))()
+    
+else
+    
+    warn("Game is not supported")
+    
+    pcall(function()
+        game.StarterGui:SetCore("SendNotification", {
+            Title = "unique script",
+            Text = "Game is not supported",
+            Duration = 5
+        })
+    end)
+end
